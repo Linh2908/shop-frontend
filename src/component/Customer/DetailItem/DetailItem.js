@@ -42,7 +42,7 @@ function DetailItem  ({infoGetProductById,getProductById}) {
                                 {product.name}
                             </Card.Title>
                         </Card.Header>
-                        <Card.Img src={`${URL}/${product.image}`} alt='anh cua san pham' className='detail-img'/>
+                        <Card.Img src={`${URL}/${product.image}`} alt='anh cua san pham' className='detail-img my-3'/>
                         <Card.Body>
                             <Card.Text>Gia : <strong>{product.price}d</strong></Card.Text>
                             {
