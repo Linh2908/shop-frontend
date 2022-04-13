@@ -134,9 +134,9 @@ function Order({
   if (cartItems.length === 0) {
     body = (
       <div className="order-empty">
-        <h3>Ban chua chon san pham nao !!!</h3>
+        <h3>Bạn chưa chọn sản phẩm nào !!!</h3>
         <Link to={`..`}>
-          <Button variant="success">Bat dau mua sam</Button>
+          <Button variant="success">Bắt đầu mua sắm</Button>
         </Link>
       </div>
     );
@@ -154,7 +154,7 @@ function Order({
         </div>
         <div className="order-right">
           <div className="order-right-title">
-            <h5>Dịa chỉ giao hàng :</h5>
+            <h5>Địa chỉ giao hàng :</h5>
             <Button onClick={() => setIsShowFrom(true)}>Chinh sua</Button>
           </div>
           {(addressForm.address === "" || isShowFrom) && (
@@ -178,7 +178,7 @@ function Order({
             className="w-100 my-2"
             onClick={() => handleOrderProducts()}
           >
-            Dặt hàng ({orderItems.length})
+            Đặt hàng ({orderItems.length})
           </Button>
         </div>
       </>
@@ -187,15 +187,15 @@ function Order({
 
   return (
     <Container className="Order-container">
-      <h3 className="order-title">Gio Hang cua ban :</h3>
+      <h3 className="order-title">Giỏ hàng của bạn :</h3>
       <div className="order-content">{body}</div>
       <Modal show={isShowModal} onHide={() => setIsShowModal(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Ban hay chon san pham can mua</Modal.Title>
+          <Modal.Title>Bạn hãy chọn sản phẩm cần mua</Modal.Title>
         </Modal.Header>
         <Modal.Footer>
           <Button variant="success" onClick={() => setIsShowModal(false)}>
-            Dong
+            Đóng
           </Button>
         </Modal.Footer>
       </Modal>

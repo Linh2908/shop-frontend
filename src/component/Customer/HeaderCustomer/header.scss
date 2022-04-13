@@ -1,0 +1,35 @@
+
+.header-container{
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width : 768px) {
+    .d_none{
+        display: none;
+    }
+    .header-container{
+        font-size: 16px;
+    }
+    .btn-dropdown .dropdown-menu[data-bs-popper]{
+        left:-100px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width : 568px) {
+    .header-container{
+        font-size: 10px;
+    }
+    .header-logo{
+        font-size: 10px;
+    }
+    .btn-dropdown{
+        .btn-primary.dropdown-toggle{
+            font-size: 10px;
+        }
+    }
+    .btn-dropdown .dropdown-menu[data-bs-popper]{
+        left:-100px;
+        font-size: 10px;
+    }
+}

@@ -25,7 +25,7 @@ function Product({ product, activeGlobal }) {
           <Card.Body>
             <Card.Title>{product.name} </Card.Title>
             <Card.Text>
-              Gia : <strong>{product.price} d</strong>
+              Giá : <strong>{product.price} d</strong>
             </Card.Text>
             {product && <Rate rating={product.rating} />}
           </Card.Body>

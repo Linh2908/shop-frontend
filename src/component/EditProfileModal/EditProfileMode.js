@@ -111,7 +111,7 @@ function EditProfileModal({infoUserUpdate,isShowEdit, user, onClose,updateUser})
   return (
     <Modal show={isShowEdit} onHide={() => handleCloseModal()}>
       <Modal.Header closeButton>
-        <Modal.Title>ChỈnh sửa tài khoản của bạn !!!</Modal.Title>
+        <Modal.Title>Chỉnh sửa tài khoản của bạn !!!</Modal.Title>
       </Modal.Header>
       {
         isShowMes && <Message message={mesValidate}/>

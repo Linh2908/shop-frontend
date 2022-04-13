@@ -9,7 +9,7 @@ import {
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import HeaderCustomer from "./header.module.css";
+import './header.scss';
 import "../../Admin/header.scss";
 import EditProfileModal from "../../EditProfileModal/EditProfileMode";
 import { logoutUser } from "../../../action/userAction";
@@ -44,10 +44,10 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" className={HeaderCustomer.container}>
+    <Navbar bg="dark" variant="dark" className={'header-container'}>
       <Container >
         <Link to="./" className="a-none" onClick={() => handleClickLink("")}>
-          <Navbar.Text as={"h3"} className={`${HeaderCustomer.logo} logo`}>
+          <Navbar.Text as={"h3"} className='header-logo logo'>
             HiShop
           </Navbar.Text>
         </Link>
@@ -59,7 +59,7 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
             }
             onClick={() => handleClickLink("smartphone")}
           >
-            <Navbar.Text>Điện thoại <span className={HeaderCustomer.d_none}>thông minh</span></Navbar.Text>
+            <Navbar.Text>Điện thoại <span className={'d_none'}>thông minh</span></Navbar.Text>
           </Link>
           <Link
             to={"./laptop"}
@@ -95,13 +95,13 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
           <DropdownButton
             id="dropdown-basic-button"
             title={`${user}`}
-            className="btn-dropdown ${HeaderCustomer.btn}"
+            className="btn-dropdown "
           >
             <Dropdown.ItemText onClick={() => handleToggleShowEdit()}>
               Chỉnh sửa tài khoản
             </Dropdown.ItemText>
             <Dropdown.ItemText onClick={() => logoutUser()}>
-              Dăng xuất
+              Đăng xuất
             </Dropdown.ItemText>
           </DropdownButton>
         </Nav>

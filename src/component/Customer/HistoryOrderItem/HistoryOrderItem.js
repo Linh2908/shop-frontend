@@ -63,7 +63,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
             onClick={() => handleToggleShowComment()}
             className={isShowComment ? "d-none" : ""}
           >
-            Dánh giá
+            Đánh giá
           </Button>
         </div>
       </div>
@@ -119,7 +119,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
             </div>
           </div>
           <Form>
-            <Form.Label>Binh luan :</Form.Label>
+            <Form.Label>Bình luận :</Form.Label>
             <Form.Control
               as={"textarea"}
               rows="3"
@@ -132,7 +132,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
               variant="success"
             >
               {" "}
-              Dang
+              Đăng
             </Button>
             <Button
               className="w-50  my-2"
@@ -156,10 +156,10 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
         </Modal.Header>
         <Modal.Footer>
           <Button variant="success" onClick={() => handleComment(product._id)}>
-            Nhan xet
+            Nhận xét
           </Button>
           <Button variant="danger" onClick={() => setIsShowMoadel(false)}>
-            Huy
+            Hủy
           </Button>
         </Modal.Footer>
       </Modal>
@@ -171,7 +171,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
         className="history-item-toats"
         onClose={() => setIsShowToats(false)}
       >
-        <Toast.Header>Danh gia thanh cong</Toast.Header>
+        <Toast.Header>Đánh giá thành công</Toast.Header>
       </Toast>
     </div>
   );

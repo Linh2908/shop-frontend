@@ -6,7 +6,7 @@ function ShippingAddress ({form}) {
 
     return (
         <div className='shipping-address'>
-            <div>Dịa chỉ : {form.address}</div>
+            <div>Địa chỉ : {form.address}</div>
             <div>Tỉnh/thành phố : {form.city}</div>
             <div>Quốc gia : {form.country}</div>
         </div>

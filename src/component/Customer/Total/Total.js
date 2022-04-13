@@ -37,7 +37,7 @@ function Total({ total, shippingPrice, sumPrice, tax,onPaymentMethod }) {
       <div className="total-item">
         <span>Tổng giá</span>
         <div className="item-red">
-          {total ? `${sumPrice}d` : <>Hay chon san pham (da bao gom thue VAT)</>}
+          {total ? `${sumPrice}d` : <>Hãy chọn sản phẩm (đã bao gồm thuế VAT)</>}
         </div>
       </div>
     </div>
