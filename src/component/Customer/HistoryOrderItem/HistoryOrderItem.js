@@ -63,7 +63,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
             onClick={() => handleToggleShowComment()}
             className={isShowComment ? "d-none" : ""}
           >
-            Danh gia
+            Dánh giá
           </Button>
         </div>
       </div>
@@ -151,7 +151,7 @@ function HistoryOrderItem({ product, infoReview, createProductReview }) {
       <Modal show={isShowMoadel} onHide={() => setIsShowMoadel(false)}>
         <Modal.Header closeButton>
           <Modal.Title>
-            Ban muon danh gia san pham nay chu {product.name}
+            Bạn muốn đánh giá sản phẩm này  {product.name} chứ
           </Modal.Title>
         </Modal.Header>
         <Modal.Footer>

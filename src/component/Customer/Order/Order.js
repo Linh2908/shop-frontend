@@ -154,7 +154,7 @@ function Order({
         </div>
         <div className="order-right">
           <div className="order-right-title">
-            <h5>Dia chi giao hang :</h5>
+            <h5>Dịa chỉ giao hàng :</h5>
             <Button onClick={() => setIsShowFrom(true)}>Chinh sua</Button>
           </div>
           {(addressForm.address === "" || isShowFrom) && (
@@ -178,7 +178,7 @@ function Order({
             className="w-100 my-2"
             onClick={() => handleOrderProducts()}
           >
-            Dat hang ({orderItems.length})
+            Dặt hàng ({orderItems.length})
           </Button>
         </div>
       </>

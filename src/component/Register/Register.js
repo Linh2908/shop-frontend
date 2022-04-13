@@ -177,10 +177,10 @@ function Register({ infoRes, registerUser }) {
       </Form>
 
       <div className="bottom-container">
-        <span>Dang nhap tai khoan tai day</span>
+        <span>Đăng nhập tài khoản tại đây</span>
         <Link to="./login">
           <Button className="ms-3 btn-bottom" variant="secondary">
-            Dang nhap
+            Đăng nhập
           </Button>
         </Link>
       </div>

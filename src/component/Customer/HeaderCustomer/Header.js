@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-  Button,
   Container,
   Dropdown,
   DropdownButton,
@@ -45,10 +44,10 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
   };
 
   return (
-    <Navbar bg="dark" variant="dark">
-      <Container>
+    <Navbar bg="dark" variant="dark" className={HeaderCustomer.container}>
+      <Container >
         <Link to="./" className="a-none" onClick={() => handleClickLink("")}>
-          <Navbar.Text as={"h3"} className="logo">
+          <Navbar.Text as={"h3"} className={`${HeaderCustomer.logo} logo`}>
             HiShop
           </Navbar.Text>
         </Link>
@@ -60,7 +59,7 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
             }
             onClick={() => handleClickLink("smartphone")}
           >
-            <Navbar.Text>Dien thoai <span className={HeaderCustomer.d_none}>thong minh</span></Navbar.Text>
+            <Navbar.Text>Điện thoại <span className={HeaderCustomer.d_none}>thông minh</span></Navbar.Text>
           </Link>
           <Link
             to={"./laptop"}
@@ -78,7 +77,7 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
             }
             onClick={() => handleClickLink("watch")}
           >
-            <Navbar.Text>Dong ho</Navbar.Text>
+            <Navbar.Text>Đồng hồ</Navbar.Text>
           </Link>
           <Link
             to={"./accessory"}
@@ -87,7 +86,7 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
             }
             onClick={() => handleClickLink("accessory")}
           >
-            <Navbar.Text>Phu kien</Navbar.Text>
+            <Navbar.Text>Phụ kiện</Navbar.Text>
           </Link>
         </Nav>
         <Nav className="grow-1"></Nav>
@@ -96,13 +95,13 @@ function Header({ infoUserAuth, infoGlobalActive, logoutUser, activeGlobal }) {
           <DropdownButton
             id="dropdown-basic-button"
             title={`${user}`}
-            className="btn-dropdown"
+            className="btn-dropdown ${HeaderCustomer.btn}"
           >
             <Dropdown.ItemText onClick={() => handleToggleShowEdit()}>
-              Chinh sua tai khoan
+              Chỉnh sửa tài khoản
             </Dropdown.ItemText>
             <Dropdown.ItemText onClick={() => logoutUser()}>
-              Dang xuat
+              Dăng xuất
             </Dropdown.ItemText>
           </DropdownButton>
         </Nav>

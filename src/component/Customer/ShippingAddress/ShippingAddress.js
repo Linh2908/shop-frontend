@@ -6,9 +6,9 @@ function ShippingAddress ({form}) {
 
     return (
         <div className='shipping-address'>
-            <div>Dia chi : {form.address}</div>
-            <div>Tinh/thanh pho : {form.city}</div>
-            <div>Quoc gia : {form.country}</div>
+            <div>Dịa chỉ : {form.address}</div>
+            <div>Tỉnh/thành phố : {form.city}</div>
+            <div>Quốc gia : {form.country}</div>
         </div>
     );
 }

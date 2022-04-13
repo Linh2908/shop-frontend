@@ -111,7 +111,7 @@ function EditProfileModal({infoUserUpdate,isShowEdit, user, onClose,updateUser})
   return (
     <Modal show={isShowEdit} onHide={() => handleCloseModal()}>
       <Modal.Header closeButton>
-        <Modal.Title>Chinh sua tai khoan cua ban !!!</Modal.Title>
+        <Modal.Title>ChỈnh sửa tài khoản của bạn !!!</Modal.Title>
       </Modal.Header>
       {
         isShowMes && <Message message={mesValidate}/>
@@ -119,7 +119,7 @@ function EditProfileModal({infoUserUpdate,isShowEdit, user, onClose,updateUser})
       <Form>
         <Modal.Body>
           <Form.Group>
-            <Form.Label htmlFor="username">Username :</Form.Label>
+            <Form.Label htmlFor="username">Tên đăng nhập :</Form.Label>
             <Form.Control
               placeholder="Nhap ten dang nhap can sua"
               id="username"
@@ -145,7 +145,7 @@ function EditProfileModal({infoUserUpdate,isShowEdit, user, onClose,updateUser})
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Password :</Form.Label>
+            <Form.Label>Mật khẩu :</Form.Label>
             <Form.Control
                 ref={passwordRef}
               placeholder="Nhap mat khau can sua"

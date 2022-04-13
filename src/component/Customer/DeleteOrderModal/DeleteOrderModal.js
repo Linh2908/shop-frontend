@@ -14,16 +14,16 @@ function DeleteOrderModal({ product, isShow, onClose, deleteProductFromCart }) {
   };
   return (
     <Modal show={isShow} onHide={() => handleClose()}>
-      <Modal.Header closeButton>Xoa san pham trong gio hang !!!</Modal.Header>
+      <Modal.Header closeButton>Xoá sản phẩm trong giỏ hàng !!!</Modal.Header>
       <Modal.Body>
-        Ban co muon xoa <strong>{product.name}</strong> trong gio hang ?
+        Bạn có muốn xóa <strong>{product.name}</strong> trong giỏ hàng ?
       </Modal.Body>
       <Modal.Footer>
         <Button variant="success" onClick={() => handleDeleteItem(product._id)}>
           Ok
         </Button>
         <Button variant="danger" onClick={() => handleClose()}>
-          Cancel
+          Thoát
         </Button>
       </Modal.Footer>
     </Modal>

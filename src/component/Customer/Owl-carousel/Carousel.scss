@@ -29,5 +29,18 @@
     }
 }
 
+@media only screen and (max-width : $width-sm) {
+    .carousel-caption{
+        font-size: 10px;
+        h5{
+            width: 200px;
+            font-size: 10px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
 
 

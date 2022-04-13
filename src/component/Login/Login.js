@@ -72,7 +72,7 @@ function Login({infoLogin, loginUser }) {
 
   return (
     <div>
-      <h1 className="title-login">Dang nhap HiShop</h1>
+      <h1 className="title-login">Đăng nhập HiShop</h1>
       {mesValidate && isShowMes && <Message message={mesValidate} />}
 
       <Form>
@@ -90,7 +90,7 @@ function Login({infoLogin, loginUser }) {
           />
         </Form.Group>
         <Form.Group className="my-3">
-          <Form.Label htmlFor="password">Mat khau : </Form.Label>
+          <Form.Label htmlFor="password">Mật khẩu : </Form.Label>
           <Form.Control
             ref = {passwordInput}
             type={"password"}
@@ -114,7 +114,7 @@ function Login({infoLogin, loginUser }) {
       </Form>
 
       <div className="bottom-container">
-        <span>Dang ky tai khoan tai day</span>
+        <span>Đăng ký tài khoản tại đây</span>
         <Link to="./register">
           <Button className="ms-3 btn-bottom" variant="secondary">
             Đăng ký

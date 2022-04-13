@@ -14,15 +14,15 @@ function ButtonGroup ({product,addProductToCart}) {
     }
     return (
         <>
-           <Button className='add-cart' onClick={() => handleAddProductToCart()}>Them vao ro hang</Button>
+           <Button className='add-cart' onClick={() => handleAddProductToCart()}>Thêm vào giỏ hàng</Button>
            <div className='btn-wapper'>
-               <Button>Mua tra gop lai xuat 0%</Button>
-               <Button>Mua tra tra gop qua the</Button>
+               <Button>Mua trả góp lãi xuất 0%</Button>
+               <Button>Mua trả góp qua thẻ</Button>
            </div>
            {
                isShow &&
             <Toast show={isShow} className='success-toast' delay={3000} autohide bg='success' onClose={() => setIsShow(false)}> 
-                <Toast.Body >Them vao gio hang thanh cong</Toast.Body>
+                <Toast.Body >Thêm vào giỏ hàng thành công</Toast.Body>
            </Toast>
            }
         </>

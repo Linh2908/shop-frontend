@@ -34,7 +34,7 @@ function FormikFormAddress({ addressFrom, onSetAddressForm }) {
   return (
     <form className="form-address">
       <div className="form-address-group">
-        <label htmlFor="address">Dia chi :</label>
+        <label htmlFor="address">Địa chỉ :</label>
         <input
           id="address"
           name="address"
@@ -47,7 +47,7 @@ function FormikFormAddress({ addressFrom, onSetAddressForm }) {
       </div>
       {formik.errors.address ? <div className='error-message'>{ formik.errors.address}</div> : null}
       <div className="form-address-group">
-        <label htmlFor="city">Tinh/ Thanh pho :</label>
+        <label htmlFor="city">Tỉnh/ Thành phố :</label>
         <input
           id="city"
           name="city"
@@ -60,7 +60,7 @@ function FormikFormAddress({ addressFrom, onSetAddressForm }) {
       </div>
       {formik.errors.city ? <div className='error-message'>{formik.errors.city}</div> : null}
       <div className="form-address-group">
-        <label htmlFor="country">Dat nuoc :</label>
+        <label htmlFor="country">Đất nước :</label>
         <input
           id="country"
           name="country"
@@ -72,7 +72,7 @@ function FormikFormAddress({ addressFrom, onSetAddressForm }) {
         />
       </div>
       {formik.errors.city ? <div className='error-message'>{formik.errors.city}</div> : null}
-      <Button variant="success" className= 'my-2 w-100' onClick={formik.handleSubmit}>Xac nhan</Button>
+      <Button variant="success" className= 'my-2 w-100' onClick={formik.handleSubmit}>Xác nhận</Button>
     </form>
   );
 }

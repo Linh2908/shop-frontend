@@ -54,7 +54,7 @@ function NarbarOrder({ infoGlobalActive ,infocart, activeGlobal }) {
           }
           onClick={() => handleClickLink("historyOrder")}
         >
-          <Navbar.Text>Lich su mua hang</Navbar.Text>
+          <Navbar.Text>Lịch sử mua hàng</Navbar.Text>
         </Link>
         <Link
           to={"./order"}
@@ -63,7 +63,7 @@ function NarbarOrder({ infoGlobalActive ,infocart, activeGlobal }) {
         >
           <Navbar.Text>
             <i className="fa-solid fa-cart-shopping"></i>
-            <span>Gio hang</span>
+            <span>Giỏ hàng</span>
             <Badge pill bg="danger">{ cartItems.length !==0 && cartItems.length}</Badge>
           </Navbar.Text>
         </Link>

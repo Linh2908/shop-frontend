@@ -33,7 +33,7 @@ function CarouselProduct({ infoGetTopProduct, getTopProduct }) {
             />
             <Carousel.Caption>
               <h5>{product.name}</h5>
-              <p> Gia chi : {product.price}</p>
+              <p> Giá chỉ : {product.price}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

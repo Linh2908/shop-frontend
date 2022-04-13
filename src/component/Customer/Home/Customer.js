@@ -31,7 +31,7 @@ function Customer() {
         </div>
       </div>
       <div>
-        <h3>Dien thoai ban chay nhat tuan :</h3>
+        <h3>Sản phẩm bán chạy nhất tuần :</h3>
         <HotProducts keyword={''} num={"12"} />
       </div>
     </Container>

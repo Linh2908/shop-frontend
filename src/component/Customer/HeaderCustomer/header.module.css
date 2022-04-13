@@ -1,7 +1,22 @@
 
+.container{
+    font-size: 10px;
+}
+
 
 @media only screen and (max-width : 768px) {
     .d_none{
         display: none;
+    }
+}
+@media only screen and (max-width : 568px) {
+    .container{
+        font-size: 10px;
+    }
+    .logo{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
     }
 }
