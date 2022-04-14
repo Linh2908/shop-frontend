@@ -1,6 +1,9 @@
 
 .header-container{
     font-size: 16px;
+    .btn-dropdown .dropdown-menu[data-bs-popper]{
+        left:-100px;
+    }
 }
 
 
