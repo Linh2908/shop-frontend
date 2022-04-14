@@ -63,3 +63,7 @@ text-decoration: none;
         border: 1px solid cadetblue !important;
     }
 }
+
+.btn-dropdown .dropdown-menu[data-bs-popper]{
+    left:-100px;
+}
