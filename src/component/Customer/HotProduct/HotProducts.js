@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Row } from "react-bootstrap";
 import { connect } from "react-redux";
 
@@ -8,7 +8,7 @@ import Product from "../Product/Product";
 function HotProducts({ infoGetHotProd, keyword, num, getProductHot }) {
   const { products } = infoGetHotProd;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
      getProductHot(keyword, num);
   }, []);
 
